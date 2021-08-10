@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(), MainActivityDelegate {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //TODO Author details navigator
+
 /*
         val destination = AuthorDetailsNavigator(navHostFragment.childFragmentManager)
         navHostFragment.findNavController().navigatorProvider.addNavigator(destination)
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity(), MainActivityDelegate {
         }
     }
 
-    override fun onSupportNavigateUp() =
+    override fun onNavigateUp() =
         Navigation.findNavController(this, R.id.navHostFragment).navigateUp()
 
 
