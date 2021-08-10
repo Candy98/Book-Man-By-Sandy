@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="@dimen/_90sdp">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:elevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <ImageView
+                android:id="@+id/ivCover"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:background="@color/white"
+                android:src="@drawable/book_cover_sample"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tvBookName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="@string/the_adventures_of_rusty"
+            app:layout_constraintStart_toEndOf="@id/cvBook"
+            app:layout_constraintTop_toTopOf="@id/cvBook"
+            android:textSize="@dimen/_12ssp"
+         />
+        <TextView
+            android:id="@+id/tvAuthorName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center_vertical"
+            android:textColor="@color/naturalGray"
+            android:text="@string/ruskin_bond"
+            app:layout_constraintTop_toBottomOf="@id/tvBookName"
+            app:layout_constraintStart_toStartOf="@id/tvBookName"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textSize="@dimen/_12ssp"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

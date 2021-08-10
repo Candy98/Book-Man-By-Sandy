@@ -40,6 +40,19 @@
 
             >
 
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnCriteria"
+                android:layout_width="wrap_content"
+                android:layout_height="0.1dp"
+                android:visibility="invisible"
+                android:popupTheme="@style/AppTheme.PopupOverlay"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_constraintTop_toTopOf="@id/tvSpinnerFilter"
+                app:layout_constraintBottom_toBottomOf="@id/tvSpinnerFilter"
+                app:layout_constraintStart_toStartOf="@id/tvSpinnerFilter"
+                app:layout_constraintEnd_toEndOf="@id/tvSpinnerFilter"
+
+                />
             <TextView
                 android:id="@+id/tvSpinnerFilter"
                 android:layout_width="@dimen/_60sdp"
@@ -71,6 +84,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <EditText
+            android:id="@+id/etSearch"
             android:layout_width="0dp"
             android:layout_height="@dimen/_35sdp"
             android:layout_marginStart="@dimen/_10sdp"
@@ -78,19 +92,23 @@
             android:background="@drawable/shape_edittext"
             android:drawableEnd="@drawable/ic_round_search_24"
             android:drawablePadding="@dimen/_10sdp"
+            android:hint="@string/search_books"
             android:drawableTint="@color/mischka"
             android:fontFamily="@font/montserrat_regular"
             android:imeOptions="actionSearch"
             android:paddingStart="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp"
             android:textSize="@dimen/_12ssp"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="text"
             app:layout_constraintBottom_toBottomOf="@id/ivMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/clSpinnerContainer"
             app:layout_constraintTop_toTopOf="@id/ivMenu"
-
-
             />
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -109,6 +127,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/clHeaderContainer"
       />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBooks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_work"
+        app:layout_constraintTop_toBottomOf="@id/tvBooks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

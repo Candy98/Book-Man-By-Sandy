@@ -4,4 +4,7 @@
     <string name="navigation_drawer_close">Nav Drawer Close</string>
     <string name="book_search">book Search</string>
     <string name="books">Books</string>
+    <string name="the_adventures_of_rusty">The adventures of rusty</string>
+    <string name="ruskin_bond">Ruskin Bond</string>
+    <string name="search_books">Search Books</string>
 </resources>
