@@ -3,15 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/drawable/book_cover_missing.xml" value="0.2125" />
+        <entry key="app/src/main/res/drawable/details_app_bar_bg.xml" value="0.20923076923076922" />
+        <entry key="app/src/main/res/drawable/ic_favorite_white_24dp.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/drawable/shape_edittext.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/layout-v23/fragment_book_search.xml" value="0.159375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_book_search.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_work_details.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/fragment_work_details_backup.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/item_author.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/item_book.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/item_search_criteria.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/item_work.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.1" />
         <entry key="app/src/main/res/menu/activity_nav_drawer_drawer.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/work_details.xml" value="0.159375" />
       </map>
     </option>
   </component>

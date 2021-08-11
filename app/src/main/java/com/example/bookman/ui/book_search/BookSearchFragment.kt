@@ -18,6 +18,7 @@ import com.example.bookman.R
 import com.example.bookman.data.SearchCriteria
 import com.example.bookman.sources.NetworkState
 import com.example.bookman.ui.MainActivityDelegate
+import com.example.bookman.ui.work_details.WorkDetailsViewModel
 import kotlinx.android.synthetic.main.fragment_book_search.*
 
 class BookSearchFragment : Fragment() {
@@ -114,11 +115,11 @@ class BookSearchFragment : Fragment() {
         rvBooks.adapter = adapter
         adapter.itemClickListener = {
             //TODO Setup Nav Graph
-            /*
+
             findNavController().navigate(
                 R.id.actionBookDetails,
                 WorkDetailsViewModel.createArguments(it)
-            )*/
+            )
         }
 
         viewModel.data.observe(viewLifecycleOwner, Observer {

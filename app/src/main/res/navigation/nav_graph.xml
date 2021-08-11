@@ -9,5 +9,14 @@
         android:id="@+id/bookSearchFragment"
         tools:layout="@layout/fragment_book_search"
         android:name="com.example.bookman.ui.book_search.BookSearchFragment"
-        android:label="BookSearchFragment" />
+        android:label="BookSearchFragment" >
+        <action
+            android:id="@+id/actionBookDetails"
+            app:destination="@id/workDetailsFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/workDetailsFragment"
+        android:name="com.example.bookman.ui.work_details.WorkDetailsFragment"
+        tools:layout="@layout/fragment_work_details_backup"
+        android:label="WorkDetailsFragment" />
 </navigation>

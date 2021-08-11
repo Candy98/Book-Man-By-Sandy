@@ -7,4 +7,14 @@
     <string name="the_adventures_of_rusty">The adventures of rusty</string>
     <string name="ruskin_bond">Ruskin Bond</string>
     <string name="search_books">Search Books</string>
+    <string name="add_favorite">Add Favorite</string>
+    <string name="remove_from_favorites">Remove FromFavorite</string>
+    <string name="book_cover">book_cover</string>
+    <string name="by">By</string>
+    <plurals name="editions_available">
+        <item quantity="one">%1$d edition available</item>
+        <item quantity="other">%1$d editions available</item>
+    </plurals>
+
+    <string name="published_year">Published: %1$s</string>
 </resources>
