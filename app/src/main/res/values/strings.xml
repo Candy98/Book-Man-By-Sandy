@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BookMan</string>
+    <string name="navigation_drawer_open">Nav Drawer Open</string>
+    <string name="navigation_drawer_close">Nav Drawer Close</string>
 </resources>
