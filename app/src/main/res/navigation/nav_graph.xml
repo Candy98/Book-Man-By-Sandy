@@ -18,5 +18,14 @@
         android:id="@+id/workDetailsFragment"
         android:name="com.example.bookman.ui.work_details.WorkDetailsFragment"
         tools:layout="@layout/fragment_work_details_backup"
-        android:label="WorkDetailsFragment" />
+        android:label="WorkDetailsFragment" >
+        <action
+            android:id="@+id/actionShowEdition"
+            app:destination="@id/bookDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailsFragment"
+        android:name="com.example.bookman.ui.book_details.BookDetailsFragment"
+        android:label="fragment_book_details"
+        tools:layout="@layout/fragment_book_details" />
 </navigation>

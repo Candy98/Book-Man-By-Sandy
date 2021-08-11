@@ -17,4 +17,5 @@
     </plurals>
 
     <string name="published_year">Published: %1$s</string>
+    <string name="number_of_pages">Number of pages: %1$d</string>
 </resources>

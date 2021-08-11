@@ -6,11 +6,13 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.bookman.R
 import com.example.bookman.data.Author
 import com.example.bookman.data.Work
 import com.example.bookman.sources.NetworkState
+import com.example.bookman.ui.book_details.BookDetailsViewModel
 import com.example.bookman.utils.CoverSize
 import com.example.bookman.utils.initToolbar
 import com.example.bookman.utils.loadCover
@@ -113,17 +115,17 @@ class WorkDetailsFragment : Fragment() {
         rvEditions.adapter = adapter
 
         adapter.itemClickListener = {
-            /*
+
             findNavController().navigate(
                 R.id.actionShowEdition,
                 BookDetailsViewModel.createArguments(it)
-            )  */    }
+            )      }
 
-        viewModel.data.observe(this, Observer {
+        viewModel.data.observe(viewLifecycleOwner, Observer {
             adapter.submitList(it)
         })
 
-        viewModel.networkState.observe(this, Observer {
+        viewModel.networkState.observe(viewLifecycleOwner, Observer {
             progressBar.visibility = when (it) {
                 NetworkState.LOADING -> View.VISIBLE
                 else -> View.GONE
